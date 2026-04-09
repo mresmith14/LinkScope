@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>LinkScope</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🔍 LinkScope</h1>
+      <div class="version-badge" id="versionBadge">Free</div>
+    </header>
+    
+    <div class="stats">
+      <div class="stat-item">
+        <span class="stat-label">Previews Today</span>
+        <span class="stat-value" id="previewCount">0</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">Saved Notes</span>
+        <span class="stat-value" id="savedCount">0/10</span>
+      </div>
+    </div>
+
+    <div class="settings">
+      <label class="toggle-setting">
+        <input type="checkbox" id="enablePreviews" checked>
+        <span>Enable Link Previews</span>
+      </label>
+      <label class="toggle-setting">
+        <input type="checkbox" id="highlightInsecure" checked>
+        <span>Highlight Insecure Links</span>
+      </label>
+      <label class="toggle-setting">
+        <input type="checkbox" id="showImages">
+        <span>Show Images in Preview</span>
+      </label>
+    </div>
+
+    <div class="saved-section">
+      <h3>Saved Previews</h3>
+      <div id="savedList" class="saved-list"></div>
+    </div>
+
+    <div class="pro-section">
+      <h3>✨ Upgrade to Pro</h3>
+      <ul class="pro-features">
+        <li>Unlimited previews & notes</li>
+        <li>Advanced TL;DR summaries</li>
+        <li>Research dashboard</li>
+        <li>Domain filtering</li>
+        <li>Priority performance mode</li>
+      </ul>
+      <div class="pro-purchase">
+        <p>Purchase via CashApp: <strong>$smithethanf</strong></p>
+        <input type="text" id="proKey" placeholder="Enter activation key">
+        <button id="activatePro">Activate Pro</button>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
